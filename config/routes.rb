@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :teams
-  devise_for :users
+  devise_for :users, controllers: {sessions: "sessions"}
   root to: 'posts#index'
   resources :posts
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
